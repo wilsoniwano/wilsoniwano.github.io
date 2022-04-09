@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#7DaysOfCode - Lógica JS 3/7: Fluxo de decisão</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap" rel="stylesheet">
+  <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+  <section id="questions">
+    <h1>Perguntas:</h1>
+    <form id="path-form">
+      <fieldset>
+        <legend>Você quer seguir para front-end ou back-end?</legend>
+        <label for="front">
+          <input type="radio" name="path" id="front" value="Front-end" checked>Front-end
+        </label>
+        <label for="back">
+          <input type="radio" name="path" id="back" value="Back-end">Back-end
+        </label>
+      </fieldset>
+      <button type="button" onclick="handlePath()">Enviar</button>
+    </form>
+  
+    <form id="front-end-form" class="hide">
+      <fieldset>
+        <legend>Quer aprender React ou Vue?</legend>
+        <label for="react">
+          <input type="radio" name="front-end" id="react" value="React" checked>React
+        </label>
+        <label for="vue">
+          <input type="radio" name="front-end" id="vue" value="Vue">Vue
+        </label>
+      </fieldset>
+      <button type="button" onclick="handleFrontEnd()">Enviar</button>
+    </form>
+  
+    <form id="back-end-form" class="hide">
+      <fieldset>
+        <legend>Quer aprender C# ou Java?</legend>
+        <label for="c-sharp">
+          <input type="radio" name="front-end" id="c-sharp" value="C#" checked>C#
+        </label>
+        <label for="java">
+          <input type="radio" name="front-end" id="java" value="Java">Java
+        </label>
+      </fieldset>
+      <button type="button" onclick="handleBackEnd()">Enviar</button>
+    </form>
+  
+    <form id="technologies-form" class="hide">
+      <label for="tech" class="legend">Tem mais alguma tecnologia que você gostaria de aprender?</label>
+      <input type="text" id="tech">
+      <button type="button" class="secondary" onclick="handleTechnologies()">Adicionar</button>
+      <button type="button" onclick="finish()">Finalizar</button>
+    </form>
+  </section>
+
+  <section id="result">
+    <h1>Pronto! <br><small>Aqui está a sua trilha:</small></h1>
+    <ul id="list"></ul>
+    <p id="placeholder">Responda as perguntas para construir sua trilha</p>
+    <p>
+      <a href="https://www.alura.com.br/escola-programacao" id="alura-back-end" class="hide"> Conheça a trilha de Back-end da Alura.</a>
+      <a href="https://www.alura.com.br/escola-front-end" id="alura-front-end" class="hide"> Conheça a trilha de Front-end da Alura.</a>
+      Bons estudos! 🖖
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
