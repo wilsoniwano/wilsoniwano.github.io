@@ -1,0 +1,263 @@
+.p-w-r {
+  --color-primary: #111111;
+  --color-accent: #FA5400;
+  
+  --color-neutral-100: #FFF;
+  --color-neutral-200: #F3F3F3;
+  --color-neutral-300: #D2D2D2;
+  --color-neutral-400: #959595;
+  --color-neutral-500: #767676;
+  --color-neutral-600: #6F6F6F;
+}
+
+/* Snippet */
+.pr-snippet-write-review-link {
+  display: none;
+}
+.pr-review-snippet-container .pr-snippet-stars-reco-reco {
+  display: none;
+}
+.pr-snippet-read-and-write {
+  margin-top: 0 !important;
+}
+.pr-checkbox-icon * {
+  fill: var(--color-primary);
+}
+.pr-snippet-reco-to-friend {
+  display: flex;
+  align-items: center;
+  max-width: 100% !important;
+}
+.pr-reco-to-friend-message {
+  max-width: 100% !important;
+  font-size: 13px !important;
+}
+.p-w-r .pr-snippet-reco-to-friend .pr-snippet-reco-to-friend-percent {
+  display: flex !important;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.p-w-r .pr-snippet-reco-to-friend .pr-snippet-reco-to-friend-percent .pr-checkbox-icon {
+  display: flex !important;
+  align-items: center;
+}
+.pr-snippet-stars-reco-stars {
+  margin-bottom: 24px !important;
+}
+.pr-snippet-stars-reco-reco {
+  margin-bottom: 24px !important;
+}
+
+/* Listagem de fotos */
+.pr-ellipsis-icon {
+  background-color: var(--color-primary) !important;
+}
+.pr-ellipsis-icon__circle__inner {
+  stroke: var(--color-primary) !important;
+  fill: var(--color-neutral-100) !important;
+}
+.pr-rid-btn-text {
+  color: var(--color-primary) !important;
+}
+
+/* Galeria de fotos */
+.carousel__footer {
+  background-color: var(--color-neutral-100) !important;
+}
+.carousel__footer span {
+  color: var(--color-primary) !important;
+}
+
+.pr-caret-icon__line {
+  stroke: var(--color-primary) !important;
+}
+.pr-media-modal .button__close:hover * {
+  stroke: var(--color-neutral-100) !important;
+}
+.pr-media-carousel .button:hover .pr-caret-icon {
+  background-color: rgba(256,256,256,.5) !important;
+}
+
+.pr-star-icon__fill--full {
+  stop-color: var(--color-primary);
+}
+
+.pr-helpful-btn {
+  background-color: var(--color-neutral-100) !important;
+  border: 1px solid #CCC;
+}
+.pr-helpful-btn .pr-thumbs-icon * {
+  fill: var(--color-neutral-500) !important;
+}
+.pr-helpful-btn:hover .pr-thumbs-icon * {
+  fill: var(--color-primary) !important;
+}
+.p-w-r .pr-helpful-active {
+  background-color: var(--color-neutral-300) !important;
+}
+.p-w-r .pr-media-carousel:not(.pr-no-conflict) .carousel__footer--flagging .pr-helpful-active .pr-helpful-count,
+.p-w-r .pr-helpful-active .pr-helpful-count {
+  color: var(--color-primary) !important;
+}
+
+.pr-rd-flag-image-container {
+  margin: 8px 16px !important;
+}
+.pr-rd-flag-image-container a {
+  color: var(--color-primary) !important;
+}
+
+
+.pr-headline {
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+.pr-review-snapshot-block {
+  border: none !important;
+}
+.pr-review-snapshot-block-pros,
+.pr-review-snapshot-block-cons {
+  display: none !important;
+}
+
+.pr-review-snapshot-block-headline {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+.pr-histogram-label {
+  color: var(--color-primary) !important;
+}
+.pr-histogram-stars .pr-histogram-label {
+  text-decoration: underline;
+}
+.pr-ratings-histogram-list-item {
+  padding: 0 !important;
+}
+.pr-ratings-histogram-barValue {
+  background-color: var(--color-primary) !important;
+}
+
+
+.pr-histogram-msq-headline {
+  font-size: 16px !important;
+}
+.pr-review-snapshot-msq {
+  margin-bottom: 24px !important;
+}
+
+
+.pr-review-snapshot-msqs {
+  display: none !important;
+}
+
+
+.pr-faceoff-readcomplete,
+.pr-faceoff-readcomplete-expanded,
+.pr-rd-flag-review-btn {
+  text-decoration: underline;
+  color: var(--color-primary) !important;
+}
+
+
+.pr-helpful-btn:hover .pr-helpful-count {
+  color: var(--color-primary) !important;
+}
+
+.pr-rd-reviewer-details {
+  display: flex;
+  gap: 8px;
+}
+.pr-rd-review-headline {
+  font-size: 18px !important;
+}
+.pr-rd-description-text {
+  font-size: 16px !important;
+  color: var(--color-primary) !important;
+}
+.pr-badging-icon * {
+  fill: var(--color-primary) !important;
+}
+.pr-rd-author-location {
+  display: none;
+}
+.pr-rd-description .pr-rd-side-content-block {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 0px !important;
+}
+.pr-rd-author-submission-date .pr-rd-bold {
+  display: none;
+}
+.pr-rd-author-submission-date time {
+  text-transform: capitalize;
+}
+
+
+.pr-rd-pagination {
+  display: flex;
+  gap: 8px;
+  border: none !important;
+}
+.pr-rd-pagination > span {
+  display: none;
+}
+.pr-rd-pagination-btn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+  padding: 16px !important;
+  border-radius: 200px;
+  border: 1px solid var(--color-neutral-300) !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  color: var(--color-primary) !important;
+}
+.pr-rd-pagination-btn:hover {
+  text-decoration: none !important;
+  border: 1px solid var(--color-neutral-400) !important;
+}
+.pr-rd-to-top {
+  color: var(--color-primary) !important;
+}
+
+
+
+
+.p-w-r,
+.p-w-r span,
+.p-w-r p,
+.p-w-r h1,
+.p-w-r h2,
+.p-w-r h3,
+.p-w-r h4,
+.p-w-r h5,
+.p-w-r h6 {
+  color: var(--color-primary);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.p-w-r a {
+  color: var(--color-primary);
+}
+.p-w-r a:hover {
+  color: var(--color-primary);
+}
+
+
+.p-w-r .pr-star-v4-0-filled {
+  background-image: url('./img/nike-star-0-filled.jpg');
+}
+.p-w-r .pr-star-v4-25-filled {
+  background-image: url('./img/nike-star-25-filled.jpg');
+}
+.p-w-r .pr-star-v4-50-filled {
+  background-image: url('./img/nike-star-50-filled.jpg');
+}
+.p-w-r .pr-star-v4-75-filled {
+  background-image: url('./img/nike-star-75-filled.jpg');
+}
+.p-w-r .pr-star-v4-100-filled {
+  background-image: url('./img/nike-star-100-filled.jpg');
+}

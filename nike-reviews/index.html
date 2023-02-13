@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://ui.powerreviews.com/stable/4.1/ui.js" async></script>
+  
+  <h1>Snippet pra adicionar perto do título</h1>
+  <div id="pr-reviewsnippet"></div>
+
+  <h1>Lista de reviews</h1>
+  <div id="pr-reviewdisplay"></div>
+
+  <script>
+    window.pwr = window.pwr || function () {
+     (pwr.q = pwr.q || []).push(arguments); 
+    };
+    pwr("render", {
+    api_key: '6e9b6645-2467-429d-9d17-ba4844b328e8',
+    locale: 'pt_BR',
+    merchant_group_id: '16685',
+    merchant_id: '182655',
+    page_id: 'CW2288',
+    review_wrapper_url:'http://yoursite.com/write-a-review/?pr_page_id=__PAGE_ID__',
+    style_sheet: 'http://127.0.0.1:5500/nike-custom-reviews.css',
+      components: {
+        ReviewSnippet: 'pr-reviewsnippet',
+        ReviewImageSnippet: 'pr-imagesnippet',
+        ReviewDisplay: 'pr-reviewdisplay'
+        }
+    });
+</script>
+</body>
+</html>
