@@ -11,6 +11,14 @@
 }
 
 
+#pr-reviewsnippet .pr-snippet {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+#pr-reviewsnippet .pr-snippet-review-count {
+  text-decoration: underline !important;
+}
 .pr-snippet-write-review-link {
   display: none;
 }
@@ -66,7 +74,6 @@
   color: var(--color-primary) !important;
 }
 
-/* Galeria de fotos */
 .carousel__footer {
   background-color: var(--color-neutral-100) !important;
 }
@@ -169,6 +176,9 @@
   color: var(--color-primary) !important;
 }
 
+.pr-review-snapshot-header-intro {
+  display: block !important;
+}
 .pr-rd-reviewer-type {
   display: flex !important;
   align-items: center;
