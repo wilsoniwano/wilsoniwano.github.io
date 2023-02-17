@@ -16,9 +16,6 @@
   align-items: center;
   gap: 16px;
 }
-#pr-reviewsnippet .pr-snippet-stars-reco-stars {
-  margin-bottom: 16px !important;
-}
 #pr-reviewsnippet .pr-snippet-review-count {
   text-decoration: underline !important;
 }
