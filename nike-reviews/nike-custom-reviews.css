@@ -170,6 +170,9 @@
   text-decoration: underline;
   color: var(--color-primary) !important;
 }
+.pr-faceoff-review {
+  color: var(--color-primary) !important;
+}
 
 
 .pr-helpful-btn:hover .pr-helpful-count {
