@@ -1,25 +1,29 @@
 .p-w-r {
   --color-primary: #111111;
-  --color-accent: #FA5400;
-  
-  --color-neutral-100: #FFF;
-  --color-neutral-200: #F3F3F3;
-  --color-neutral-300: #D2D2D2;
+  --color-accent: #fa5400;
+
+  --color-neutral-100: #fff;
+  --color-neutral-200: #f3f3f3;
+  --color-neutral-300: #d2d2d2;
   --color-neutral-400: #959595;
   --color-neutral-500: #767676;
-  --color-neutral-600: #6F6F6F;
+  --color-neutral-600: #6f6f6f;
 }
 
+.pr-faceoff-review {
+  color: var(--color-primary) !important;
+}
 
 #pr-reviewsnippet .pr-snippet {
   display: flex;
   align-items: center;
   gap: 16px;
+  margin-bottom: 24px;
 }
 #pr-reviewsnippet .pr-snippet-review-count {
   text-decoration: underline !important;
 }
-.pr-snippet-write-review-link {
+#pr-reviewsnippet .pr-snippet-write-review-link {
   display: none;
 }
 .pr-review-snippet-container .pr-snippet-stars-reco-reco {
@@ -45,17 +49,38 @@
   align-items: center;
   flex-wrap: nowrap;
 }
-.p-w-r .pr-snippet-reco-to-friend .pr-snippet-reco-to-friend-percent .pr-checkbox-icon {
+.p-w-r
+  .pr-snippet-reco-to-friend
+  .pr-snippet-reco-to-friend-percent
+  .pr-checkbox-icon {
   display: flex !important;
   align-items: center;
 }
 #pr-reviewdisplay .pr-snippet-stars-reco-stars {
   margin-bottom: 32px !important;
 }
+#pr-reviewdisplay .pr-snippet-read-and-write {
+  width: 100%;
+}
+#pr-reviewdisplay .pr-snippet-write-review-link {
+  display: block;
+  margin-top: 24px;
+  border: 1px solid var(--color-neutral-300);
+  padding: 16px 16px;
+  width: 100%;
+  border-radius: 500px;
+  font-size: 16px !important;
+  text-align: center;
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+#pr-reviewdisplay .pr-snippet-write-review-link:hover {
+  border: 1px solid var(--color-neutral-500);
+}
 .pr-snippet-stars-reco-reco {
   margin-bottom: 32px !important;
 }
-
 
 .pr-review-snapshot-faceoff {
   margin-bottom: 40px !important;
@@ -88,7 +113,7 @@
   stroke: var(--color-neutral-100) !important;
 }
 .pr-media-carousel .button:hover .pr-caret-icon {
-  background-color: rgba(256,256,256,.5) !important;
+  background-color: rgba(256, 256, 256, 0.5) !important;
 }
 
 .pr-star-icon__fill--full {
@@ -97,7 +122,7 @@
 
 .pr-helpful-btn {
   background-color: var(--color-neutral-100) !important;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
 }
 .pr-helpful-btn .pr-thumbs-icon * {
   fill: var(--color-neutral-500) !important;
@@ -108,7 +133,11 @@
 .p-w-r .pr-helpful-active {
   background-color: var(--color-neutral-300) !important;
 }
-.p-w-r .pr-media-carousel:not(.pr-no-conflict) .carousel__footer--flagging .pr-helpful-active .pr-helpful-count,
+.p-w-r
+  .pr-media-carousel:not(.pr-no-conflict)
+  .carousel__footer--flagging
+  .pr-helpful-active
+  .pr-helpful-count,
 .p-w-r .pr-helpful-active .pr-helpful-count {
   color: var(--color-primary) !important;
 }
@@ -119,7 +148,6 @@
 .pr-rd-flag-image-container a {
   color: var(--color-primary) !important;
 }
-
 
 .pr-headline {
   font-size: 18px !important;
@@ -150,7 +178,6 @@
   background-color: var(--color-primary) !important;
 }
 
-
 .pr-histogram-msq-headline {
   font-size: 16px !important;
 }
@@ -158,11 +185,9 @@
   margin-bottom: 24px !important;
 }
 
-
 .pr-review-snapshot-msqs {
   display: none !important;
 }
-
 
 .pr-faceoff-readcomplete,
 .pr-faceoff-readcomplete-expanded,
@@ -170,10 +195,6 @@
   text-decoration: underline;
   color: var(--color-primary) !important;
 }
-.pr-faceoff-review {
-  color: var(--color-primary) !important;
-}
-
 
 .pr-helpful-btn:hover .pr-helpful-count {
   color: var(--color-primary) !important;
@@ -222,7 +243,6 @@
   text-transform: capitalize;
 }
 
-
 .pr-rd-pagination {
   display: flex;
   gap: 8px;
@@ -252,9 +272,6 @@
   color: var(--color-primary) !important;
 }
 
-
-
-
 .p-w-r,
 .p-w-r span,
 .p-w-r p,
@@ -265,7 +282,7 @@
 .p-w-r h5,
 .p-w-r h6 {
   color: var(--color-primary);
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 .p-w-r a {
   color: var(--color-primary);
@@ -273,7 +290,6 @@
 .p-w-r a:hover {
   color: var(--color-primary);
 }
-
 
 .p-w-r .pr-star-v4-0-filled {
   background-image: url('./img/nike-star-0-filled.jpg');
@@ -289,4 +305,33 @@
 }
 .p-w-r .pr-star-v4-100-filled {
   background-image: url('./img/nike-star-100-filled.jpg');
+}
+
+.pr-ggl_show-more-btn-container {
+  color: var(--color-primary) !important;
+}
+
+
+.pr-media-modal * a {
+  color: var(--color-primary) !important;
+}
+.pr-media-modal .pr-header-required {
+  margin-bottom: 24px !important;
+}
+.pr-media-modal .pr-cross-icon .pr-cross-icon__line {
+  stroke: var(--color-primary) !important
+}
+.pr-media-modal .pr-btn-fileinput {
+  color: var(--color-primary) !important;
+}
+.pr-media-modal .pr-subscript {
+  margin-bottom: 24px !important;
+}
+.pr-media-modal .pr-btn-review,
+.pr-media-modal .pr-btn-review:hover {
+  background-color: var(--color-primary);
+  border-radius: 500px;
+  padding: 16px 24px;
+  border: none;
+  color: var(--color-neutral-100);
 }
