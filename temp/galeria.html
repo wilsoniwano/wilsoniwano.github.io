@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    dialog {
+      padding: 32px;
+      border: none;
+      border-radius: 8px;
+      height: fit-content;
+    /*   max-height: 720px; */
+      width: fit-content;
+    /*   max-width: 720px; */
+      object-fit: contain;
+      touch-action: pinch-zoom;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  </style>
+  <script>
+    const showButton = document.getElementById("showDialog");
+    const favDialog = document.getElementById("favDialog");
+    showButton.addEventListener("click", () => {
+      favDialog.showModal();
+    });
+  </script>
+</head>
+<body>
+  <button id="showDialog">Abrir diálogo</button>
+
+  <dialog id="favDialog">
+    <img src="https://res.cloudinary.com/powerreviews/image/upload/f_auto,q_auto,h_768,w_auto/d_portal-no-product-image_ttlfpi.svg/prod/rihdo3qt6zn6npsqzwbw.jpg">
+    <img src="https://res.cloudinary.com/powerreviews/image/upload/f_auto,q_auto,h_768,w_auto/d_portal-no-product-image_ttlfpi.svg/prod/jjd6gwznkmyk1ewyquv1.jpg">
+  </dialog>
+</body>
+</html>
