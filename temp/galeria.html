@@ -26,14 +26,7 @@
       object-fit: contain;
     }
   </style>
-  <script>
-    const showButton = document.getElementById("showDialog");
-    const favDialog = document.getElementById("favDialog");
-    showButton.addEventListener("click", () => {
-      favDialog.showModal();
-    });
-  </script>
-</head>
+  </head>
 <body>
   <button id="showDialog">Abrir diálogo</button>
 
@@ -41,5 +34,13 @@
     <img src="https://res.cloudinary.com/powerreviews/image/upload/f_auto,q_auto,h_768,w_auto/d_portal-no-product-image_ttlfpi.svg/prod/rihdo3qt6zn6npsqzwbw.jpg">
     <img src="https://res.cloudinary.com/powerreviews/image/upload/f_auto,q_auto,h_768,w_auto/d_portal-no-product-image_ttlfpi.svg/prod/jjd6gwznkmyk1ewyquv1.jpg">
   </dialog>
+
+  <script>
+    const showButton = document.getElementById("showDialog");
+    const favDialog = document.getElementById("favDialog");
+    showButton.addEventListener("click", () => {
+      favDialog.showModal();
+    });
+  </script>
 </body>
 </html>
